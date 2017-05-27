@@ -1,0 +1,16 @@
+PODS:
+  - KWTimer (0.1.0)
+
+DEPENDENCIES:
+  - KWTimer (from `../`)
+
+EXTERNAL SOURCES:
+  KWTimer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KWTimer: 197b87689126f447ec18275bbbb5a8de7792a2c4
+
+PODFILE CHECKSUM: ac0aae3fcc4d8a3daf68cb3f3f88c8c613301c54
+
+COCOAPODS: 1.2.0

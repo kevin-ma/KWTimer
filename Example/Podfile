@@ -1,0 +1,14 @@
+source 'http://new.gitlab.hui10.com/Hui10-iOS//Hui10Repos.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+target 'KWTimer_Example' do
+  pod 'KWTimer', :path => '../'
+
+  target 'KWTimer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
