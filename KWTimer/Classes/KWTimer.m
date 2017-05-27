@@ -13,6 +13,11 @@
 @property (nonatomic, strong) NSTimer *timer;
 
 @property (nonatomic, assign) NSInteger counter;
+
+@property (nonatomic, strong) NSMutableArray<KWTimerAction *> *actions;
+
+@property (nonatomic, assign) NSTimeInterval timeInterval;
+
 @end
 
 
@@ -143,7 +148,7 @@
     }
     
     [self.timer setFireDate:[NSDate distantFuture]];
-    self.working = NO;
+    _working = NO;
 }
 
 - (void)startTimer
@@ -158,7 +163,7 @@
         self.timer = [NSTimer scheduledTimerWithTimeInterval:_timeInterval target:self selector:@selector(execTimeActions) userInfo:nil repeats:YES];
         [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
-    self.working = YES;
+    _working = YES;
 }
 @end
 

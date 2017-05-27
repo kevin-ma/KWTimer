@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+/** just a model class exist to support timer working */
 @interface KWTimerAction : NSObject
 
 @property (nonatomic, weak) id target;
